@@ -14,6 +14,10 @@
 		FF3AC55A1F0BFED100420CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3AC5591F0BFED100420CC3 /* Assets.xcassets */; };
 		FF3AC55D1F0BFED100420CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3AC55B1F0BFED100420CC3 /* LaunchScreen.storyboard */; };
 		FF3AC5681F0BFED100420CC3 /* StretchMyHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AC5671F0BFED100420CC3 /* StretchMyHeaderTests.swift */; };
+		FF3AC5731F0C00B100420CC3 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AC5721F0C00B100420CC3 /* NewsTableViewCell.swift */; };
+		FF3AC5751F0C071200420CC3 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AC5741F0C071200420CC3 /* NewsItem.swift */; };
+		FF3AC5771F0C0AF900420CC3 /* Stretchy-Header.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3AC5761F0C0AF900420CC3 /* Stretchy-Header.xcassets */; };
+		FF3AC5791F0C0B0600420CC3 /* Stretchy-NavBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3AC5781F0C0B0600420CC3 /* Stretchy-NavBar.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		FF3AC5631F0BFED100420CC3 /* StretchMyHeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StretchMyHeaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3AC5671F0BFED100420CC3 /* StretchMyHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchMyHeaderTests.swift; sourceTree = "<group>"; };
 		FF3AC5691F0BFED100420CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3AC5721F0C00B100420CC3 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		FF3AC5741F0C071200420CC3 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		FF3AC5761F0C0AF900420CC3 /* Stretchy-Header.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Stretchy-Header.xcassets"; sourceTree = "<group>"; };
+		FF3AC5781F0C0B0600420CC3 /* Stretchy-NavBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Stretchy-NavBar.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +90,12 @@
 				FF3AC5501F0BFED100420CC3 /* AppDelegate.swift */,
 				FF3AC5521F0BFED100420CC3 /* MasterViewController.swift */,
 				FF3AC5541F0BFED100420CC3 /* DetailViewController.swift */,
+				FF3AC5721F0C00B100420CC3 /* NewsTableViewCell.swift */,
+				FF3AC5741F0C071200420CC3 /* NewsItem.swift */,
 				FF3AC5561F0BFED100420CC3 /* Main.storyboard */,
-				FF3AC5591F0BFED100420CC3 /* Assets.xcassets */,
 				FF3AC55B1F0BFED100420CC3 /* LaunchScreen.storyboard */,
 				FF3AC55E1F0BFED100420CC3 /* Info.plist */,
+				FF3AC57A1F0C0B6400420CC3 /* Assets */,
 			);
 			path = StretchMyHeader;
 			sourceTree = "<group>";
@@ -97,6 +107,16 @@
 				FF3AC5691F0BFED100420CC3 /* Info.plist */,
 			);
 			path = StretchMyHeaderTests;
+			sourceTree = "<group>";
+		};
+		FF3AC57A1F0C0B6400420CC3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FF3AC5591F0BFED100420CC3 /* Assets.xcassets */,
+				FF3AC5761F0C0AF900420CC3 /* Stretchy-Header.xcassets */,
+				FF3AC5781F0C0B0600420CC3 /* Stretchy-NavBar.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3AC5771F0C0AF900420CC3 /* Stretchy-Header.xcassets in Resources */,
 				FF3AC55D1F0BFED100420CC3 /* LaunchScreen.storyboard in Resources */,
 				FF3AC55A1F0BFED100420CC3 /* Assets.xcassets in Resources */,
 				FF3AC5581F0BFED100420CC3 /* Main.storyboard in Resources */,
+				FF3AC5791F0C0B0600420CC3 /* Stretchy-NavBar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3AC5551F0BFED100420CC3 /* DetailViewController.swift in Sources */,
+				FF3AC5751F0C071200420CC3 /* NewsItem.swift in Sources */,
 				FF3AC5531F0BFED100420CC3 /* MasterViewController.swift in Sources */,
+				FF3AC5731F0C00B100420CC3 /* NewsTableViewCell.swift in Sources */,
 				FF3AC5511F0BFED100420CC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
